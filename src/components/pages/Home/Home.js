@@ -17,6 +17,7 @@ const Home = () => {
     useEffect(() => {
         getProPlayers();
         getPlayerById();
+        // eslint-disable-next-line
     }, []);
 
     return (

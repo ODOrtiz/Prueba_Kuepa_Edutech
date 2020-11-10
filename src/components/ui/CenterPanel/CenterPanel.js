@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import SearchIcon from '@material-ui/icons/Search';
+import FilterIcon from '../../../assets/FilterIcon.svg';
 
 // Importaciones propias
 import './CenterPanel.css';
@@ -15,15 +15,21 @@ const CenterPanel = () => {
 
     const playersCon = useContext(playersContext);
     let { user } = playersCon;
-    if (user.profile == undefined) user = { profile: { name: '' }, rank_tier: 0, leaderboard_rank: 0 };
+    if (user.profile === undefined) user = { profile: { name: '' }, rank_tier: 0, leaderboard_rank: 0 };
 
     return (
         <div className='inline-top-div home-center-panel bg-color-primary'>
             <div className='container-center-panel'>
-                <input className='input-search' type="text" placeholder='Search' />
+                <div className='container-search'>
+                    <input className='input-search' type="text" placeholder='Search' />
+                    <img className="icon-search" src={FilterIcon} alt="icono buscar" />
+                </div>
                 <h1>Hola, {user.profile.name}</h1>
                 <LeadsStats user={user} />
-                <MetaGrupal />
+                {user ?
+                    <MetaGrupal user={user} /> : null
+                }
+
                 <div>
                     <AgendaHoy />
                     <PlanHoy />

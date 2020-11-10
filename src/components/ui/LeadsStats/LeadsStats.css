@@ -66,3 +66,18 @@
         font-size: 0.7rem;
     }
 }
+
+@media screen and (max-width: 361px) {
+    .container-progress-leads-stats {
+        width: 40px;
+        height: 40px;
+        margin: 30px 10px;
+    }
+    .container-text-leads-stats {
+        width: 200px;
+        text-align: left;
+    }
+    .text-leads-stats {
+        width: 100px;
+    }
+}

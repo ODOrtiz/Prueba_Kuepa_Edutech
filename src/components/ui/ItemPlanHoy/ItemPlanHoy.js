@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MsgIcon from '@material-ui/icons/SpeakerNotes';
+import PropTypes from 'prop-types';
 
 // Importaciones propias
 import './ItemPlanHoy.css';
@@ -46,6 +47,14 @@ const ItemPlanHoy = ({ colorSquare, calls, msgs, title }) => {
             </div>
         </div>
     );
+}
+
+// Documentacion
+ItemPlanHoy.propTypes = {
+    colorSquare: PropTypes.string,
+    calls: PropTypes.number.isRequired,
+    msgs: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired
 }
 
 export default ItemPlanHoy;

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import "./ProgressBar.css";
+import PropTypes from 'prop-types';
 
 const ProgressBar = ({ progress, title, disableTitle, width, background }) => {
 
@@ -21,7 +22,7 @@ const ProgressBar = ({ progress, title, disableTitle, width, background }) => {
     return (
         <>
             {
-                disableTitle ? null : (<p className="text-percent">{title} {progress}</p>)
+                disableTitle ? null : (<p className="text-percent">{title}</p>)
             }
             <div ref={containerRef} className="container-progress">
                 <div className="container-progress-2">
@@ -31,6 +32,15 @@ const ProgressBar = ({ progress, title, disableTitle, width, background }) => {
             </div>
         </>
     );
+}
+
+// Documentacion
+ProgressBar.propTypes = {
+    progress: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    disableTitle: PropTypes.number,
+    width: PropTypes.string,
+    background: PropTypes.string
 }
 
 export default ProgressBar;

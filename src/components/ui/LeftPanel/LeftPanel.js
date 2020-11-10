@@ -15,19 +15,19 @@ const LeftPanel = () => {
 
     const playersCon = useContext(playersContext);
     let { user } = playersCon;
-    if (user.profile == undefined) user = { profile: { avatar: '' } };
+    if (user.profile === undefined) user = { profile: { avatar: '' } };
 
     return (
         <div className='inline-top-div home-left-panel bg-color-primary'>
             <div className='containere-left-panel'>
                 {/* <p className='title-panel-left'>ket</p> */}
-                <img src={kuepaIcon} className='img-title-panel-left' />
+                <img src={kuepaIcon} className='img-title-panel-left' alt='Icono Kuepa' />
                 <div className='container-icon'><HomeIcon /></div>
                 <div className='container-icon'><ReceiptIcon style={{ color: '#e16d3a' }} /></div>
                 <div className='container-icon'><BooksIcon /></div>
                 <div className='container-icon msg-icon'><ChatIcon /></div>
                 <div className='container-picture-panel'>
-                    <img className='picture-panel' src={user.profile.avatar}></img>
+                    <img className='picture-panel' src={user.profile.avatar} alt='Foto usuario'></img>
                 </div>
 
             </div>

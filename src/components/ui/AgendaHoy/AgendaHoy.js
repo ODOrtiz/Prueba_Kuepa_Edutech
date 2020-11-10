@@ -27,7 +27,7 @@ const AgendaHoy = () => {
                                     <p>Descuento temporada</p>
                                 </td>
                                 <td className='width-agenda-2'>
-                                    {player.fantasy_role == 2
+                                    {player.fantasy_role === 2
                                         ?
                                         <div className='cicle-orange'></div>
                                         :

@@ -1,11 +1,8 @@
 .home-center-panel {
     width: calc(100vw - calc(var(--width-lateral-panel-home-left) + var(--width-lateral-panel-home-rigth)));
     min-height: 100vh;
-    /* border-top-left-radius: var(--radius-home-page); */
-    /* border-bottom-left-radius: var(--radius-home-page); */
     position: relative;
     z-index: 1;
-    /* text-align: center; */
 }
 
 .home-center-panel::before {
@@ -16,20 +13,24 @@
     border-bottom-left-radius: var(--radius-home-page);
     width: calc(100vw - calc(var(--width-lateral-panel-home-left) + var(--width-lateral-panel-home-rigth)));
     min-height: 100vh;
-    background-color: #f4fcfc;
+    /* background-color: #f4fcfc; */
+    background-color: #EEE;
 }
 
 .container-center-panel {
     margin: 30px 30px;
 }
 
+.container-search {
+    position: relative;
+}
+
 .input-search {
     width: 250px;
-    /* margin: 20px 5%; */
     padding: 7px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #999;
-    background-color: #EEE;
+    background-color: #DDD;
     border-radius: 15px;
     border-color: transparent;
     border-width: 1px;
@@ -39,24 +40,37 @@
 .input-search:focus {
     outline: none;
     border-radius: 15px;
-    border-color: #EEE;
-    border-width: 1.2px;
+    border-color: #DDD;
+    border-width: 1px;
     box-sizing: border-box;
+}
+
+.icon-search {
+    position: absolute;
+    /* top: 5px; */
+    /* left: 260px; */
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-search:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {
     .home-center-panel {
-        background-color: #f4fcfc;
+        background-color: #EEE;
         width: 97%;
-        margin: 0px 3% 0px 0%;
+        margin: 60px 3% 0px 0%;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .home-center-panel {
         width: 97%;
-        margin: 0px 3% 0px -2%;
-        background-color: #f4fcfc;
+        margin: 60px 3% 0px -2%;
+        background-color: #EEE;
         text-align: center;
     }
     .home-center-panel::before {

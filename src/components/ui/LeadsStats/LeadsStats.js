@@ -1,6 +1,7 @@
 import React from 'react';
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import PropTypes from 'prop-types';
 
 // Importaciones propias
 import './LeadsStats.css';
@@ -31,6 +32,11 @@ const LeadsStats = ({ user }) => {
             </div>
         </div>
     );
+}
+
+// Documentacion
+LeadsStats.propTypes = {
+    user: PropTypes.object.isRequired
 }
 
 export default LeadsStats;

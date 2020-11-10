@@ -4,7 +4,6 @@ import * as types from '../types/index';
 
 import apiClientAxios from '../../config/axios';
 import { filterPlayersByRole } from '../../utils/filterPlayers';
-import { StarRateSharp } from '@material-ui/icons';
 
 const { default: playersReducer } = require('./playersReducer');
 
@@ -40,7 +39,6 @@ const PlayersState = (props) => {
     const getPlayerById = async () => {
         try {
             const resp = await apiClientAxios.get('players/8712306');
-            console.log(resp.data);
             dispatch({
                 type: types.SAVE_INFO_USER,
                 payload: resp.data

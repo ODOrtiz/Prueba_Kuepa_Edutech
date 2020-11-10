@@ -22,7 +22,8 @@ const RigthPanel = () => {
             setWidth(document.documentElement.clientWidth);
         });
         setWidth(document.documentElement.clientWidth);
-    });
+        // eslint-disable-next-line
+    }, []);
 
     const setWidth = (widthScreen) => {
         if (widthScreen < 1400) {
@@ -38,16 +39,8 @@ const RigthPanel = () => {
         }
     }
 
-    // .home-right-panel {
-    //     width: 25px;
-    //     transition: all 0.4s ease;
-    // }
-    // .conatiner-items-rigth-panel {
-    //     display: none;
-    // }
     const styleOpen = { width: 135, transition: 'all 0.2s ease', borderRadiusLeftTop: 40, borderRadiusLeftBottom: 40, zIndex: 20 };
     const styleClose = { width: 25, transition: 'all 0.2s ease', zIndex: 20 };
-    const styleOpenItems = {};
     const styleCloseItems = { display: 'none' };
 
     return (
