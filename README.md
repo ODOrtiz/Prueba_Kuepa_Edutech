@@ -9,6 +9,15 @@ La pagina es responsible, de manera que se verá diferente en cada dispositivo.
 - Pantalla Grande: Diseño como en el PDF.
 - Pantallas de 14 pulgadas para abajo el diseño cambia.
 
+#### Pantalla grande
+![grande](grande.png)
+
+#### Pantalla mediana
+![grande](mediana.jpg)
+
+#### Pantalla pequeña
+![grande](pequena.jpg)
+
 ## Para ejecutar de forma local
 Clonar el proyecto
 ```
