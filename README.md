@@ -10,13 +10,13 @@ La pagina es responsible, de manera que se verá diferente en cada dispositivo.
 - Pantallas de 14 pulgadas para abajo el diseño cambia.
 
 #### Pantalla grande
-![grande](grande.png)
+![grande](grande.PNG)
 
 #### Pantalla mediana
-![grande](mediana.jpg)
+![mediana](mediana.JPG)
 
 #### Pantalla pequeña
-![grande](pequena.jpg)
+![pequeña](pequena.jpg)
 
 ## Para ejecutar de forma local
 Clonar el proyecto
