@@ -3,7 +3,7 @@ Este proyecto fue creado con "create-react-app".
 
 Version react 17.0.1.
 
-Existe una version online aquí: [demo online](www.prueba-kuepa-edutech.web.app)
+Existe una version online aquí: [demo online](https://www.prueba-kuepa-edutech.web.app)
 ## Para ejecutar de forma local
 Clonar el proyecto
 ```
