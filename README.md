@@ -4,6 +4,11 @@ Este proyecto fue creado con "create-react-app".
 Version react 17.0.1.
 
 Existe una version online aquí: [demo online](https://prueba-kuepa-edutech.web.app/)
+
+La pagina es responsible, de manera que se verá diferente en cada dispositivo.
+- Pantalla Grande: Diseño como en el PDF.
+- Pantallas de 14 pulgadas para abajo el diseño cambia.
+
 ## Para ejecutar de forma local
 Clonar el proyecto
 ```
