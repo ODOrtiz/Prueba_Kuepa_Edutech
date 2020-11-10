@@ -1,13 +1,80 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f4fcfc;
+    /********************* Variables globales ***********************/
+    /* Colores */
+    --color-primary: #2c2c43;
+    --color-accent: #e16d3a;
+    /* Medidas */
+    --radius-home-page: 40px;
+    --width-lateral-panel-home-left: 100px;
+    --width-lateral-panel-home-rigth: 140px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+/*===================================== Clases globales ====================================*/
+
+.inline-top-div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inline-middle-div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-page {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+}
+
+.bg-color-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-color-accent {
+    background-color: var(--color-accent);
+}
+
+
+/* ============== Personalizar Scroll Bar =================== */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
